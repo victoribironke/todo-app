@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body onload="getTasks()">
+  <header>
+    <div id="welcome">Welcome</div>
+    Dashboard
+    <div class="settings"><a href="../Account Settings/index.html">Account Settings</a></div>
+    <div class="log-out"><a href="../index.html">Log out</a></div>
+  </header>
+  <input type="text" placeholder="Create A New Task..." id="text-input"/>
+  <p class="head">Tasks</p>
+  <div class="container" id="container">
+    <!-- <div class="tasks">
+      <input type="checkbox" id="check"/>
+      <p style="font-style: italic; color: grey;" id="box">First Task</p>
+      <div class="remove1"></div>
+      <div class="remove2"></div>
+    </div>
+
+    <div class="tasks">
+      <input type="checkbox" id="check"/>
+      <p style="font-style: italic; color: grey;" id="box">Second Task</p>
+      <div class="remove1"></div>
+      <div class="remove2"></div>
+    </div> -->
+
+  </div>
+  <p class="bottom" id="counter">0 Tasks Left</p>
+  <div class="clear" id="clear">Clear</div>
+</body>
+</html>
