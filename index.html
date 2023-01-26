@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+
+    <title>Frontend Mentor | Todo App</title>
+
+    <style>
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+        color: var(--very-light-gray);
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media_queries.css" />
+    <script src="./src/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./images/bg-desktop-dark.jpg" alt="bg" />
+    </header>
+
+    <main>
+      <div class="title">
+        <p>TODO</p>
+        <img src="./images/icon-sun.svg" class="theme-icon" alt="light" />
+      </div>
+      <div class="input-div">
+        <div></div>
+        <input type="text" class="input" placeholder="Create a new todo..." />
+      </div>
+      <div class="tasks-div">
+        <div class="bottom">
+          <p>Items left</p>
+          <p class="clear">Clear Completed</p>
+        </div>
+      </div>
+      <div class="filters">
+        <p>All</p>
+        <p>Active</p>
+        <p>Completed</p>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="htps://victoribironke.netlify.app">Victor Ibironke</a>.
+    </footer>
+  </body>
+</html>
