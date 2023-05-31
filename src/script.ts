@@ -100,6 +100,12 @@ const addListeners = (): void => {
       createTasks(taskList);
     })
   );
+
+  // Clear completed block
+  document.querySelector(".clear")?.addEventListener("click", () => {
+    taskList = taskList.filter((task) => !task.done);
+    createTasks(taskList);
+  });
 };
 
 const createTasks = (tasks: Tasks[]): void => {
@@ -119,7 +125,7 @@ const createTasks = (tasks: Tasks[]): void => {
     });
     tasksDiv.innerHTML += `<div class="bottom"><p>${
       tasks.length !== 0 ? tasks.filter((task) => !task.done).length : 0
-    } Items left</p><p>Clear Completed</p></div>`;
+    } Items left</p><p class="clear">Clear Completed</p></div>`;
     addListeners();
     storage.setItem("tasks", JSON.stringify(taskList));
   }
@@ -129,7 +135,7 @@ const updateTasks = (tasks: Tasks[]): void => {
   if (tasksDiv?.lastElementChild) {
     tasksDiv.lastElementChild.innerHTML = `<p>${
       tasks.filter((task) => !task.done).length
-    } Items left</p><p>Clear Completed</p>`;
+    } Items left</p><p class="clear">Clear Completed</p>`;
   }
 };
 
